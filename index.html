@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Roadmap 2025 - Complete Free Resources</title>
+    <title>Data Analyst Roadmap 2026 - Complete Guide</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -14,7 +14,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
@@ -24,432 +24,1165 @@
         header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px;
+            padding: 50px;
             text-align: center;
         }
-        header h1 { font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-        header p { font-size: 1.2em; opacity: 0.9; }
-        .intro { padding: 30px 40px; background: #f8f9fa; border-bottom: 3px solid #667eea; }
-        .intro h2 { color: #667eea; margin-bottom: 15px; }
-        .flowchart { padding: 40px; }
-        .stage { margin-bottom: 50px; position: relative; }
+        header h1 { font-size: 3em; margin-bottom: 15px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        header p { font-size: 1.3em; opacity: 0.95; margin: 10px 0; }
+        .intro {
+            padding: 40px 50px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-bottom: 4px solid #667eea;
+        }
+        .intro h2 { color: #667eea; margin-bottom: 20px; font-size: 2em; }
+        .intro p { font-size: 1.1em; line-height: 1.8; }
+        .flowchart { padding: 50px; background: #f8f9fa; }
+        .stage { margin-bottom: 60px; position: relative; }
         .stage-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px 30px;
+            padding: 25px 40px;
             border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+            position: relative;
         }
-        .stage-header h2 { font-size: 1.8em; display: flex; align-items: center; }
+        .stage-header h2 { font-size: 2em; display: flex; align-items: center; }
         .stage-number {
-            background: rgba(255,255,255,0.2);
-            width: 50px;
-            height: 50px;
+            background: rgba(255,255,255,0.25);
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 15px;
-            font-size: 1.5em;
+            margin-right: 20px;
+            font-size: 1.8em;
             font-weight: bold;
+            border: 3px solid rgba(255,255,255,0.5);
+        }
+        .substage {
+            margin: 30px 0;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+        }
+        .substage h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .substage-icon {
+            margin-right: 12px;
+            font-size: 1.3em;
         }
         .resources {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 20px;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
+            margin-top: 15px;
         }
         .resource-card {
-            background: white;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
             border-left: 4px solid #667eea;
         }
         .resource-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            border-left-width: 6px;
         }
-        .resource-card h3 { color: #667eea; margin-bottom: 15px; font-size: 1.2em; }
+        .resource-card h4 {
+            color: #764ba2;
+            margin-bottom: 12px;
+            font-size: 1.15em;
+            font-weight: 600;
+        }
         .resource-card ul { list-style: none; }
-        .resource-card li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .resource-card li:before { content: "→"; position: absolute; left: 0; color: #667eea; font-weight: bold; }
-        .resource-card a { color: #764ba2; text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        .resource-card a:hover { color: #667eea; text-decoration: underline; }
+        .resource-card li {
+            margin-bottom: 10px;
+            padding-left: 22px;
+            position: relative;
+            font-size: 0.95em;
+        }
+        .resource-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .resource-card a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .resource-card a:hover {
+            color: #667eea;
+            text-decoration: underline;
+        }
+        .cert-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        .arrow-down {
+            text-align: center;
+            font-size: 3em;
+            color: #667eea;
+            margin: 30px 0;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
         .learning-path {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
-            padding: 40px;
-            margin: 40px 0;
-            border-radius: 15px;
+            padding: 50px;
+            margin: 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        .learning-path h2 { margin-bottom: 20px; font-size: 2em; }
+        .learning-path h2 { margin-bottom: 30px; font-size: 2.5em; text-align: center; }
         .path-stages {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
         }
-        .path-card { background: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; backdrop-filter: blur(10px); }
-        .path-card h3 { margin-bottom: 10px; font-size: 1.3em; }
+        .path-card {
+            background: rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .path-card h3 { margin-bottom: 15px; font-size: 1.5em; }
+        .path-card ul { list-style: none; margin-top: 15px; }
+        .path-card li { margin-bottom: 8px; padding-left: 20px; position: relative; }
+        .path-card li:before { content: "✓"; position: absolute; left: 0; font-weight: bold; }
         .tips {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 20px 30px;
-            margin: 30px 40px;
-            border-radius: 5px;
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border-left: 6px solid #ffc107;
+            padding: 30px 40px;
+            margin: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        .tips h3 { color: #856404; margin-bottom: 15px; }
+        .tips h3 { color: #856404; margin-bottom: 20px; font-size: 1.8em; }
         .tips ul { list-style: none; }
-        .tips li { margin-bottom: 10px; padding-left: 25px; position: relative; color: #856404; }
-        .tips li:before { content: "💡"; position: absolute; left: 0; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 30px; }
-        .arrow-down { text-align: center; font-size: 2em; color: #667eea; margin: 20px 0; }
+        .tips li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            color: #856404;
+            font-size: 1.05em;
+        }
+        .tips li:before { content: "💡"; position: absolute; left: 0; font-size: 1.3em; }
+        .certifications {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            padding: 50px;
+            margin: 50px 0;
+            border-radius: 20px;
+        }
+        .certifications h2 {
+            color: #00695c;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .cert-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #00695c;
+            transition: transform 0.3s;
+        }
+        .cert-card:hover { transform: translateY(-8px); }
+        .cert-card h3 { color: #00695c; margin-bottom: 15px; }
+        .cert-card p { color: #666; margin-bottom: 15px; line-height: 1.6; }
+        .cert-card a {
+            display: inline-block;
+            background: #00695c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .cert-card a:hover { background: #004d40; }
+        footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        footer h3 { margin-bottom: 25px; font-size: 2em; }
+        footer a { color: #3498db; margin: 0 15px; text-decoration: none; font-weight: 500; }
+        footer a:hover { color: #5dade2; text-decoration: underline; }
+        .books-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8em; }
+            header h1 { font-size: 2em; }
             .resources { grid-template-columns: 1fr; }
             .path-stages { grid-template-columns: 1fr; }
+            .cert-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🚀 Data Analyst Roadmap 2025</h1>
-            <p>Complete Free Learning Resources Guide for Students</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">200+ Free Resources | Step-by-Step Learning Path | All Hyperlinked</p>
+            <h1>🚀 Data Analyst Roadmap 2026</h1>
+            <p>Complete Step-by-Step Learning Path with Free Resources</p>
+            <p style="font-size: 1.1em; margin-top: 15px;">300+ Free Resources | Free Certifications | Comprehensive Guide</p>
         </header>
         
         <div class="intro">
-            <h2>Welcome to Your Data Analysis Journey! 📊</h2>
-            <p>This comprehensive roadmap contains carefully curated <strong>100% FREE resources</strong> to help you become a skilled Data Analyst. All links are clickable and will take you directly to the learning materials. Follow the stages in order for the best learning experience!</p>
+            <h2>🎯 Your Complete Journey to Becoming a Data Analyst</h2>
+            <p>This is the most comprehensive Data Analyst roadmap for 2026, containing <strong>every topic</strong> from the roadmap.sh curriculum with carefully curated <strong>100% FREE resources</strong>. Follow this flowchart-style guide from top to bottom, master each stage, and build your portfolio along the way. All links are clickable and lead directly to high-quality learning materials.</p>
+            <p style="margin-top: 15px;"><strong>📌 How to use this roadmap:</strong> Start from Stage 1 and work your way down. Complete the resources in each substage before moving to the next. Practice with real projects throughout your journey.</p>
         </div>
         
         <div class="flowchart">
-            <!-- Stage 1 -->
+            
+            <!-- STAGE 1: INTRODUCTION -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">1</span> Foundation Skills - Excel & Spreadsheets</h2>
+                    <h2><span class="stage-number">1</span> Introduction to Data Analysis</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>📊 Excel Basics & Functions</h3>
-                        <ul>
-                            <li><a href="https://support.microsoft.com/en-us/excel" target="_blank">Microsoft Excel Official Training</a></li>
-                            <li><a href="https://www.excel-easy.com/" target="_blank">Excel Easy - Complete Tutorial</a></li>
-                            <li><a href="https://www.youtube.com/@LeilaGharani" target="_blank">Leila Gharani YouTube Channel</a></li>
-                            <li><a href="https://www.youtube.com/@ExcelIsFun" target="_blank">ExcelIsFun YouTube Channel</a></li>
-                            <li><a href="https://chandoo.org/wp/excel-basics/" target="_blank">Chandoo.org Excel Tips</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📚</span>What is Data Analysis?</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Understanding Data Analysis</h4>
+                            <ul>
+                                <li><a href="https://www.coursera.org/articles/what-does-a-data-analyst-do-a-career-guide" target="_blank">What Does a Data Analyst Do? (Coursera)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=yZvFH7B6gKI" target="_blank">What is Data Analysis? (Alex The Analyst)</a></li>
+                                <li><a href="https://www.ibm.com/topics/data-analysis" target="_blank">IBM: Data Analysis Overview</a></li>
+                                <li><a href="https://careerfoundry.com/en/blog/data-analytics/what-is-data-analytics/" target="_blank">CareerFoundry: Complete Guide</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>🔄 Pivot Tables & Analysis</h3>
-                        <ul>
-                            <li><a href="https://www.excel-easy.com/data-analysis/pivot-tables.html" target="_blank">Excel Pivot Tables Tutorial</a></li>
-                            <li><a href="https://www.youtube.com/@MyOnlineTrainingHub" target="_blank">MyOnlineTrainingHub YouTube</a></li>
-                            <li><a href="https://www.excelcampus.com/pivot-tables/" target="_blank">Excel Campus - Pivot Tables</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>⚡ Advanced Functions</h3>
-                        <ul>
-                            <li><a href="https://www.excel-easy.com/examples/vlookup.html" target="_blank">VLOOKUP Tutorial</a></li>
-                            <li><a href="https://www.excel-easy.com/functions/logical-functions.html" target="_blank">IF Functions Guide</a></li>
-                            <li><a href="https://exceljet.net/formulas" target="_blank">Excel Formulas List</a></li>
-                            <li><a href="https://support.google.com/docs/answer/6000292" target="_blank">Google Sheets Training</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🔍</span>Types of Data Analytics</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Descriptive Analytics</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=yZvFH7B6gKI" target="_blank">Descriptive Analytics Explained</a></li>
+                                <li><a href="https://www.tableau.com/learn/articles/descriptive-analytics" target="_blank">Tableau: Descriptive Analytics Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Diagnostic Analytics</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=Vr9YhA_8ksE" target="_blank">Diagnostic Analytics Tutorial</a></li>
+                                <li><a href="https://www.sisense.com/glossary/diagnostic-analytics/" target="_blank">Sisense: Diagnostic Analytics</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Predictive Analytics</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=Vr9YhA_8ksE" target="_blank">Predictive Analytics Basics</a></li>
+                                <li><a href="https://www.ibm.com/topics/predictive-analytics" target="_blank">IBM: Predictive Analytics</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Prescriptive Analytics</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=Vr9YhA_8ksE" target="_blank">Prescriptive Analytics Overview</a></li>
+                                <li><a href="https://www.gartner.com/en/information-technology/glossary/prescriptive-analytics" target="_blank">Gartner: Prescriptive Analytics</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 2 -->
+            <!-- STAGE 2: BUILDING FOUNDATION -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">2</span> SQL - Database Querying</h2>
+                    <h2><span class="stage-number">2</span> Building a Strong Foundation</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>🎮 Interactive SQL Learning</h3>
-                        <ul>
-                            <li><a href="https://sqlbolt.com/" target="_blank">SQLBolt (Interactive Lessons)</a></li>
-                            <li><a href="https://sqlzoo.net/" target="_blank">SQL Zoo</a></li>
-                            <li><a href="https://selectstarsql.com/" target="_blank">Select Star SQL</a></li>
-                            <li><a href="https://mystery.knightlab.com/" target="_blank">SQL Murder Mystery (Game)</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>📚 Comprehensive Tutorials</h3>
-                        <ul>
-                            <li><a href="https://mode.com/sql-tutorial/" target="_blank">Mode Analytics SQL Tutorial</a></li>
-                            <li><a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL</a></li>
-                            <li><a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank">Khan Academy SQL</a></li>
-                            <li><a href="https://www.postgresqltutorial.com/" target="_blank">PostgreSQL Tutorial</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>💪 Practice Platforms</h3>
-                        <ul>
-                            <li><a href="https://leetcode.com/problemset/database/" target="_blank">LeetCode SQL Problems</a></li>
-                            <li><a href="https://www.hackerrank.com/domains/sql" target="_blank">HackerRank SQL</a></li>
-                            <li><a href="https://datalemur.com/" target="_blank">DataLemur SQL Questions</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank">freeCodeCamp SQL Course</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📊</span>Analysis & Reporting with Excel</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Excel Basics</h4>
+                            <ul>
+                                <li><a href="https://support.microsoft.com/en-us/excel" target="_blank">Microsoft Excel Official Training</a></li>
+                                <li><a href="https://www.excel-easy.com/" target="_blank">Excel Easy - Complete Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Vl0H-qTclOg" target="_blank">Excel Full Course (freeCodeCamp - 3 hours)</a></li>
+                                <li><a href="https://www.youtube.com/@LeilaGharani" target="_blank">Leila Gharani YouTube Channel</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Common Functions</h4>
+                            <ul>
+                                <li><a href="https://www.excel-easy.com/functions.html" target="_blank">SUM, MIN, MAX, AVERAGE, COUNT</a></li>
+                                <li><a href="https://www.excel-easy.com/functions/text-functions.html" target="_blank">CONCAT, TRIM Functions</a></li>
+                                <li><a href="https://www.excel-easy.com/functions/text-functions.html" target="_blank">UPPER, LOWER, PROPER</a></li>
+                                <li><a href="https://www.excel-easy.com/functions/text-functions.html" target="_blank">REPLACE, SUBSTITUTE</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Advanced Functions</h4>
+                            <ul>
+                                <li><a href="https://www.excel-easy.com/examples/vlookup.html" target="_blank">VLOOKUP / HLOOKUP Tutorial</a></li>
+                                <li><a href="https://www.excel-easy.com/functions/logical-functions.html" target="_blank">IF Function Guide</a></li>
+                                <li><a href="https://www.excel-easy.com/examples/date-time.html" target="_blank">DATEDIF Function</a></li>
+                                <li><a href="https://exceljet.net/formulas" target="_blank">Excel Formulas Cheat Sheet</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Pivot Tables</h4>
+                            <ul>
+                                <li><a href="https://www.excel-easy.com/data-analysis/pivot-tables.html" target="_blank">Pivot Tables Complete Guide</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=UsdedFoTA68" target="_blank">Pivot Tables Tutorial (MyOnlineTrainingHub)</a></li>
+                                <li><a href="https://www.excelcampus.com/pivot-tables/" target="_blank">Excel Campus - Pivot Tables</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Charting & Visualization</h4>
+                            <ul>
+                                <li><a href="https://www.excel-easy.com/data-analysis/charts.html" target="_blank">Excel Charts Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Excel Charts & Graphs (Leila Gharani)</a></li>
+                                <li><a href="https://chandoo.org/wp/excel-charts/" target="_blank">Chandoo: Excel Charts Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Google Sheets (Alternative)</h4>
+                            <ul>
+                                <li><a href="https://support.google.com/docs/answer/6000292" target="_blank">Google Sheets Training</a></li>
+                                <li><a href="https://www.benlcollins.com/spreadsheets/" target="_blank">Ben Collins Google Sheets</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 3 -->
+            <!-- STAGE 3: PROGRAMMING LANGUAGES -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">3</span> Python Programming for Data Analysis</h2>
+                    <h2><span class="stage-number">3</span> Learn Programming Languages</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>🐍 Python Basics</h3>
-                        <ul>
-                            <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python.org Official Tutorial</a></li>
-                            <li><a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff (Free Book)</a></li>
-                            <li><a href="https://www.py4e.com/" target="_blank">Python for Everybody</a></li>
-                            <li><a href="https://www.youtube.com/@coreyms" target="_blank">Corey Schafer Python Tutorials</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">freeCodeCamp Python Course</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🐍</span>Python for Data Analysis</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Python Basics</h4>
+                            <ul>
+                                <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python.org Official Tutorial</a></li>
+                                <li><a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff (Free Book)</a></li>
+                                <li><a href="https://www.py4e.com/" target="_blank">Python for Everybody (Free Course)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw" target="_blank">Python Full Course (freeCodeCamp - 4.5 hours)</a></li>
+                                <li><a href="https://www.youtube.com/@coreyms" target="_blank">Corey Schafer Python Tutorials</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Data Manipulation - Pandas</h4>
+                            <ul>
+                                <li><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank">Official Pandas Documentation</a></li>
+                                <li><a href="https://www.kaggle.com/learn/pandas" target="_blank">Kaggle Pandas Course (Free)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=vmEHCJofslg" target="_blank">Keith Galli Pandas Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y" target="_blank">Data School Pandas Series</a></li>
+                                <li><a href="https://github.com/guipsamora/pandas_exercises" target="_blank">Pandas Exercises (Practice)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Numerical Computing - NumPy</h4>
+                            <ul>
+                                <li><a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank">NumPy Official Quickstart</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=QUT1VHiLmmI" target="_blank">NumPy Course (freeCodeCamp)</a></li>
+                                <li><a href="https://github.com/rougier/numpy-100" target="_blank">NumPy 100 Exercises</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Visualization - Matplotlib</h4>
+                            <ul>
+                                <li><a href="https://matplotlib.org/stable/tutorials/index.html" target="_blank">Matplotlib Official Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=UO98lJQ3QGI" target="_blank">Corey Schafer Matplotlib</a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF" target="_blank">Sentdex Matplotlib Series</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Visualization - Seaborn</h4>
+                            <ul>
+                                <li><a href="https://seaborn.pydata.org/tutorial.html" target="_blank">Seaborn Official Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=6GUZXDef2U0" target="_blank">Seaborn Crash Course</a></li>
+                                <li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/04.14-visualization-with-seaborn.html" target="_blank">Python Data Science Handbook - Seaborn</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>🐼 Pandas (Data Manipulation)</h3>
-                        <ul>
-                            <li><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" target="_blank">Official Pandas Documentation</a></li>
-                            <li><a href="https://www.kaggle.com/learn/pandas" target="_blank">Kaggle Pandas Course</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=vmEHCJofslg" target="_blank">Keith Galli Pandas Tutorial</a></li>
-                            <li><a href="https://github.com/guipsamora/pandas_exercises" target="_blank">Pandas Exercises (Practice)</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📈</span>R Programming (Alternative)</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>R Basics</h4>
+                            <ul>
+                                <li><a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science (Free Book)</a></li>
+                                <li><a href="https://swirlstats.com/" target="_blank">Swirl - Interactive R Learning</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=_V8eKsto3Ug" target="_blank">R Programming Full Course (freeCodeCamp)</a></li>
+                                <li><a href="https://www.tutorialspoint.com/r/index.htm" target="_blank">TutorialsPoint R Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Data Manipulation - Dplyr</h4>
+                            <ul>
+                                <li><a href="https://dplyr.tidyverse.org/" target="_blank">Dplyr Official Documentation</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=jOd65mR1zfw" target="_blank">Dplyr Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Visualization - Ggplot2</h4>
+                            <ul>
+                                <li><a href="https://ggplot2.tidyverse.org/" target="_blank">Ggplot2 Official Documentation</a></li>
+                                <li><a href="https://r-graphics.org/" target="_blank">R Graphics Cookbook</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=h29g21z0a68" target="_blank">Ggplot2 Tutorial</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>📈 Visualization Libraries</h3>
-                        <ul>
-                            <li><a href="https://matplotlib.org/stable/tutorials/index.html" target="_blank">Matplotlib Official Tutorial</a></li>
-                            <li><a href="https://seaborn.pydata.org/tutorial.html" target="_blank">Seaborn Official Tutorial</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=UO98lJQ3QGI" target="_blank">Corey Schafer Matplotlib</a></li>
-                            <li><a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank">NumPy Official Tutorial</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🗄️</span>Learn SQL</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Interactive SQL Learning</h4>
+                            <ul>
+                                <li><a href="https://sqlbolt.com/" target="_blank">SQLBolt (Interactive Lessons)</a></li>
+                                <li><a href="https://sqlzoo.net/" target="_blank">SQL Zoo</a></li>
+                                <li><a href="https://selectstarsql.com/" target="_blank">Select Star SQL</a></li>
+                                <li><a href="https://mystery.knightlab.com/" target="_blank">SQL Murder Mystery (Game)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Comprehensive Tutorials</h4>
+                            <ul>
+                                <li><a href="https://mode.com/sql-tutorial/" target="_blank">Mode Analytics SQL Tutorial</a></li>
+                                <li><a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL</a></li>
+                                <li><a href="https://www.khanacademy.org/computing/computer-programming/sql" target="_blank">Khan Academy SQL</a></li>
+                                <li><a href="https://www.postgresqltutorial.com/" target="_blank">PostgreSQL Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" target="_blank">SQL Full Course (freeCodeCamp - 4 hours)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>SQL Practice Platforms</h4>
+                            <ul>
+                                <li><a href="https://leetcode.com/problemset/database/" target="_blank">LeetCode SQL Problems</a></li>
+                                <li><a href="https://www.hackerrank.com/domains/sql" target="_blank">HackerRank SQL</a></li>
+                                <li><a href="https://datalemur.com/" target="_blank">DataLemur SQL Interview Questions</a></li>
+                                <li><a href="https://www.stratascratch.com/" target="_blank">StrataScratch SQL Practice</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 4 -->
+            <!-- STAGE 4: DATA HANDLING -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">4</span> Statistics & Mathematics</h2>
+                    <h2><span class="stage-number">4</span> Mastering Data Handling</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>📊 Descriptive Statistics</h3>
-                        <ul>
-                            <li><a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Khan Academy Statistics</a></li>
-                            <li><a href="https://www.youtube.com/@statquest" target="_blank">StatQuest YouTube Channel</a></li>
-                            <li><a href="https://www.statisticshowto.com/" target="_blank">Statistics How To</a></li>
-                            <li><a href="https://seeing-theory.brown.edu/" target="_blank">Seeing Theory (Interactive Visual)</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📥</span>Data Collection</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Databases</h4>
+                            <ul>
+                                <li><a href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank">PostgreSQL Tutorial</a></li>
+                                <li><a href="https://dev.mysql.com/doc/mysql-tutorial-excerpt/8.0/en/" target="_blank">MySQL Tutorial</a></li>
+                                <li><a href="https://www.mongodb.com/docs/manual/tutorial/" target="_blank">MongoDB Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>CSV Files</h4>
+                            <ul>
+                                <li><a href="https://docs.python.org/3/library/csv.html" target="_blank">Python CSV Module</a></li>
+                                <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html" target="_blank">Pandas Read CSV</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Xi52tx6phRU" target="_blank">Working with CSV Files</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>APIs</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=GZvSYJDk-us" target="_blank">Working with APIs Tutorial</a></li>
+                                <li><a href="https://requests.readthedocs.io/" target="_blank">Python Requests Library</a></li>
+                                <li><a href="https://github.com/public-apis/public-apis" target="_blank">Public APIs List</a></li>
+                                <li><a href="https://restfulapi.net/" target="_blank">REST API Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Web Scraping</h4>
+                            <ul>
+                                <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup Documentation</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=XVv6mJpFOb0" target="_blank">Web Scraping with Python (freeCodeCamp)</a></li>
+                                <li><a href="https://docs.scrapy.org/en/latest/intro/tutorial.html" target="_blank">Scrapy Tutorial</a></li>
+                                <li><a href="https://selenium-python.readthedocs.io/" target="_blank">Selenium Python</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>🔬 Inferential Statistics</h3>
-                        <ul>
-                            <li><a href="https://www.openintro.org/book/os/" target="_blank">OpenIntro Statistics (Free Book)</a></li>
-                            <li><a href="https://online.stat.psu.edu/statprogram/" target="_blank">Penn State Statistics Online</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=0oc49DyA3hU" target="_blank">StatQuest Hypothesis Testing</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>📉 Regression & Correlation</h3>
-                        <ul>
-                            <li><a href="https://www.youtube.com/watch?v=nk2CQITm_eo" target="_blank">StatQuest Linear Regression</a></li>
-                            <li><a href="https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data" target="_blank">Khan Academy Regression</a></li>
-                            <li><a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/" target="_blank">Correlation Tutorial</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🧹</span>Data Cleanup</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Handling Missing Data</h4>
+                            <ul>
+                                <li><a href="https://pandas.pydata.org/docs/user_guide/missing_data.html" target="_blank">Pandas Missing Data Guide</a></li>
+                                <li><a href="https://www.kaggle.com/code/alexisbcook/missing-values" target="_blank">Kaggle: Handling Missing Values</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=fCMrO_VzeL8" target="_blank">Missing Data Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Removing Duplicates</h4>
+                            <ul>
+                                <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html" target="_blank">Pandas Drop Duplicates</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=eMOA1pPVUc4" target="_blank">Removing Duplicates Tutorial</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Finding Outliers</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=rzR_cKnkD18" target="_blank">Outlier Detection Methods</a></li>
+                                <li><a href="https://towardsdatascience.com/ways-to-detect-and-remove-the-outliers-404d16608dba" target="_blank">Outlier Detection Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Data Transformation</h4>
+                            <ul>
+                                <li><a href="https://realpython.com/python-data-cleaning-numpy-pandas/" target="_blank">Data Cleaning with Pandas</a></li>
+                                <li><a href="https://www.kaggle.com/learn/data-cleaning" target="_blank">Kaggle Data Cleaning Course</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=bDhvCp3_lYw" target="_blank">Alex The Analyst - Data Cleaning</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 5 -->
+            <!-- STAGE 5: DATA ANALYSIS TECHNIQUES -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">5</span> Data Visualization Tools</h2>
+                    <h2><span class="stage-number">5</span> Data Analysis Techniques</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>📊 Tableau</h3>
-                        <ul>
-                            <li><a href="https://public.tableau.com/en-us/s/resources" target="_blank">Tableau Public Free Training</a></li>
-                            <li><a href="https://www.tableau.com/academic/students" target="_blank">Tableau Desktop Free for Students</a></li>
-                            <li><a href="https://www.youtube.com/@TableauTim" target="_blank">Tableau Tim YouTube</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=aHaOIvR00So" target="_blank">Tableau Full Course (freeCodeCamp)</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>⚡ Power BI</h3>
-                        <ul>
-                            <li><a href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi" target="_blank">Microsoft Power BI Learning</a></li>
-                            <li><a href="https://powerbi.microsoft.com/en-us/desktop/" target="_blank">Power BI Desktop (Free Download)</a></li>
-                            <li><a href="https://www.youtube.com/@GuyInACube" target="_blank">Guy in a Cube YouTube</a></li>
-                            <li><a href="https://www.youtube.com/@PragmaticWorks" target="_blank">Pragmatic Works Power BI</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>🎨 Other Tools</h3>
-                        <ul>
-                            <li><a href="https://plotly.com/python/" target="_blank">Plotly Python</a></li>
-                            <li><a href="https://d3js.org/" target="_blank">D3.js (Advanced)</a></li>
-                            <li><a href="https://datastudio.google.com/" target="_blank">Google Data Studio</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📊</span>Descriptive Analysis</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Central Tendency</h4>
+                            <ul>
+                                <li><a href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data" target="_blank">Mean, Median, Mode (Khan Academy)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=h8EYEJ32oQ8" target="_blank">Central Tendency Explained</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Dispersion</h4>
+                            <ul>
+                                <li><a href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-population" target="_blank">Range, Variance, Standard Deviation</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=E4HAYd0QnRc" target="_blank">StatQuest: Variance & SD</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Distribution</h4>
+                            <ul>
+                                <li><a href="https://seeing-theory.brown.edu/basic-probability/index.html" target="_blank">Skewness & Kurtosis (Seeing Theory)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=HnMGKsupF8Q" target="_blank">Understanding Distributions</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Generating Statistics</h4>
+                            <ul>
+                                <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html" target="_blank">Pandas Describe Function</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=xi0vhXFPegw" target="_blank">Exploratory Data Analysis</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 6 -->
+            <!-- STAGE 6: DATA VISUALIZATION -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">6</span> Portfolio Building & Practice</h2>
+                    <h2><span class="stage-number">6</span> Data Visualization</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>💪 Practice Platforms</h3>
-                        <ul>
-                            <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn</a></li>
-                            <li><a href="https://www.kaggle.com/competitions" target="_blank">Kaggle Competitions</a></li>
-                            <li><a href="https://www.stratascratch.com/" target="_blank">StrataScratch</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📊</span>Visualization Tools & Libraries</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Tableau</h4>
+                            <ul>
+                                <li><a href="https://public.tableau.com/en-us/s/resources" target="_blank">Tableau Public Free Training</a></li>
+                                <li><a href="https://www.tableau.com/academic/students" target="_blank">Tableau Desktop Free for Students</a></li>
+                                <li><a href="https://www.youtube.com/@TableauTim" target="_blank">Tableau Tim YouTube</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=aHaOIvR00So" target="_blank">Tableau Full Course (freeCodeCamp - 4 hours)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Power BI</h4>
+                            <ul>
+                                <li><a href="https://learn.microsoft.com/en-us/training/powerplatform/power-bi" target="_blank">Microsoft Power BI Learning</a></li>
+                                <li><a href="https://powerbi.microsoft.com/en-us/desktop/" target="_blank">Power BI Desktop (Free Download)</a></li>
+                                <li><a href="https://www.youtube.com/@GuyInACube" target="_blank">Guy in a Cube YouTube</a></li>
+                                <li><a href="https://www.youtube.com/@PragmaticWorks" target="_blank">Pragmatic Works Power BI</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Python Libraries</h4>
+                            <ul>
+                                <li><a href="https://matplotlib.org/stable/tutorials/index.html" target="_blank">Matplotlib</a></li>
+                                <li><a href="https://seaborn.pydata.org/tutorial.html" target="_blank">Seaborn</a></li>
+                                <li><a href="https://plotly.com/python/" target="_blank">Plotly</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>R Libraries</h4>
+                            <ul>
+                                <li><a href="https://ggplot2.tidyverse.org/" target="_blank">Ggplot2</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>📊 Dataset Sources</h3>
-                        <ul>
-                            <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a></li>
-                            <li><a href="https://archive.ics.uci.edu/ml/index.php" target="_blank">UCI ML Repository</a></li>
-                            <li><a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a></li>
-                            <li><a href="https://data.gov/" target="_blank">Data.gov</a></li>
-                            <li><a href="https://data.fivethirtyeight.com/" target="_blank">FiveThirtyEight Data</a></li>
-                        </ul>
-                    </div>
-                    <div class="resource-card">
-                        <h3>🎨 Portfolio Tips</h3>
-                        <ul>
-                            <li><a href="https://github.com/topics/data-analysis" target="_blank">Data Analysis Projects GitHub</a></li>
-                            <li><a href="https://guides.github.com/activities/hello-world/" target="_blank">GitHub Basics</a></li>
-                            <li><a href="https://www.dataquest.io/blog/data-analyst-portfolio/" target="_blank">Portfolio Project Ideas</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📈</span>Chart Types</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Basic Charts</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Bar Charts</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Line Charts</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Scatter Plots</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Pie Charts</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Advanced Charts</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Histograms</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Heatmaps</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Funnel Charts</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=DAU0Ggr_rfQ" target="_blank">Stacked Charts</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="arrow-down">⬇️</div>
             
-            <!-- Stage 7 -->
+            <!-- STAGE 7: STATISTICAL ANALYSIS -->
             <div class="stage">
                 <div class="stage-header">
-                    <h2><span class="stage-number">7</span> Career Resources & Communities</h2>
+                    <h2><span class="stage-number">7</span> Statistical Analysis</h2>
                 </div>
-                <div class="resources">
-                    <div class="resource-card">
-                        <h3>📺 YouTube Channels</h3>
-                        <ul>
-                            <li><a href="https://www.youtube.com/@AlexTheAnalyst" target="_blank">Alex The Analyst</a></li>
-                            <li><a href="https://www.youtube.com/@KenJee_ds" target="_blank">Ken Jee</a></li>
-                            <li><a href="https://www.youtube.com/@LukeBarousse" target="_blank">Luke Barousse</a></li>
-                            <li><a href="https://www.youtube.com/@DataProfessor" target="_blank">Data Professor</a></li>
-                            <li><a href="https://www.youtube.com/@TinaHuang1" target="_blank">Tina Huang</a></li>
-                        </ul>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📊</span>Core Statistics</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Statistics Fundamentals</h4>
+                            <ul>
+                                <li><a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Khan Academy Statistics & Probability</a></li>
+                                <li><a href="https://www.youtube.com/@statquest" target="_blank">StatQuest YouTube Channel</a></li>
+                                <li><a href="https://www.statisticshowto.com/" target="_blank">Statistics How To</a></li>
+                                <li><a href="https://seeing-theory.brown.edu/" target="_blank">Seeing Theory (Interactive)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Hypothesis Testing</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=0oc49DyA3hU" target="_blank">StatQuest: Hypothesis Testing</a></li>
+                                <li><a href="https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample" target="_blank">Khan Academy: Hypothesis Tests</a></li>
+                                <li><a href="https://www.statisticshowto.com/probability-and-statistics/hypothesis-testing/" target="_blank">Hypothesis Testing Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Correlation Analysis</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=xZ_z8KWkhXE" target="_blank">StatQuest: Correlation</a></li>
+                                <li><a href="https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/" target="_blank">Correlation Coefficient Guide</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Regression Analysis</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=nk2CQITm_eo" target="_blank">StatQuest: Linear Regression</a></li>
+                                <li><a href="https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data" target="_blank">Khan Academy: Regression</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=yIYKR4sgzI8" target="_blank">StatQuest: Logistic Regression</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Visualizing Distributions</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=HnMGKsupF8Q" target="_blank">Understanding Distributions</a></li>
+                                <li><a href="https://seeing-theory.brown.edu/probability-distributions/index.html" target="_blank">Probability Distributions (Interactive)</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>💼 Interview Prep</h3>
-                        <ul>
-                            <li><a href="https://www.interviewquery.com/" target="_blank">Data Analyst Interview Questions</a></li>
-                            <li><a href="https://www.datalemur.com/" target="_blank">SQL Interview Questions</a></li>
-                            <li><a href="https://www.glassdoor.com/" target="_blank">Glassdoor Interview Reviews</a></li>
-                        </ul>
+                </div>
+            </div>
+            
+            <div class="arrow-down">⬇️</div>
+            
+            <!-- STAGE 8: ADVANCED TOPICS -->
+            <div class="stage">
+                <div class="stage-header">
+                    <h2><span class="stage-number">8</span> Advanced Topics</h2>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🤖</span>Machine Learning</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>ML Fundamentals</h4>
+                            <ul>
+                                <li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Andrew Ng's ML Course (Audit Free)</a></li>
+                                <li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Google's ML Crash Course</a></li>
+                                <li><a href="https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF" target="_blank">StatQuest ML Playlist</a></li>
+                                <li><a href="https://course.fast.ai/" target="_blank">Fast.ai Practical ML</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Supervised Learning</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=nk2CQITm_eo" target="_blank">Linear Regression</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=yIYKR4sgzI8" target="_blank">Logistic Regression</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=_L39rN6gz7Y" target="_blank">Decision Trees</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ" target="_blank">Random Forests</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=O2L2Uv9pdDA" target="_blank">Naive Bayes</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=HVXime0nQeI" target="_blank">KNN Algorithm</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Unsupervised Learning</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=4b5d3muPQmA" target="_blank">K-Means Clustering</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=FgakZw6K1QQ" target="_blank">PCA (Principal Component Analysis)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Scikit-learn Library</h4>
+                            <ul>
+                                <li><a href="https://scikit-learn.org/stable/tutorial/index.html" target="_blank">Scikit-learn Official Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=pqNCD_5r0IU" target="_blank">Scikit-learn Course (3 hours)</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Model Evaluation</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=fSytzGwwBVw" target="_blank">Cross-Validation</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Kdsp6soqA7o" target="_blank">Confusion Matrix</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=4jRBRDbJemM" target="_blank">ROC Curves & AUC</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="resource-card">
-                        <h3>👥 Communities</h3>
-                        <ul>
-                            <li><a href="https://www.reddit.com/r/dataanalysis/" target="_blank">r/dataanalysis</a></li>
-                            <li><a href="https://www.reddit.com/r/learnpython/" target="_blank">r/learnpython</a></li>
-                            <li><a href="https://www.reddit.com/r/SQL/" target="_blank">r/SQL</a></li>
-                            <li><a href="https://www.kaggle.com/discussion" target="_blank">Kaggle Forums</a></li>
-                            <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-                        </ul>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">☁️</span>Big Data Technologies (Optional)</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Big Data Concepts</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=KCEPoPJ8sWw" target="_blank">Big Data Explained</a></li>
+                                <li><a href="https://www.ibm.com/topics/big-data" target="_blank">IBM: What is Big Data?</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Hadoop</h4>
+                            <ul>
+                                <li><a href="https://hadoop.apache.org/docs/stable/" target="_blank">Hadoop Documentation</a></li>
+                                <li><a href="https://www.tutorialspoint.com/hadoop/index.htm" target="_blank">Hadoop Tutorial</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=aReuLtY0YMI" target="_blank">Hadoop Full Course</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Apache Spark</h4>
+                            <ul>
+                                <li><a href="https://spark.apache.org/docs/latest/" target="_blank">Spark Documentation</a></li>
+                                <li><a href="https://spark.apache.org/docs/latest/api/python/getting_started/index.html" target="_blank">PySpark Tutorial</a></li>
+                                <li><a href="https://sparkbyexamples.com/" target="_blank">Spark by Examples</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=_C8kWso4ne4" target="_blank">PySpark Full Course</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>MapReduce & Parallel Processing</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=cvhKoniK5Uo" target="_blank">MapReduce Explained</a></li>
+                                <li><a href="https://www.tutorialspoint.com/map_reduce/index.htm" target="_blank">MapReduce Tutorial</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🧠</span>Deep Learning (Optional)</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Neural Networks Basics</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank">3Blue1Brown: Neural Networks</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U" target="_blank">Neural Networks Explained</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>CNN & RNN</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=YRhxdVk_sIs" target="_blank">CNNs Explained</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=AsNTP8Kwu80" target="_blank">RNNs Explained</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Frameworks</h4>
+                            <ul>
+                                <li><a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow Tutorials</a></li>
+                                <li><a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=tPYj3fFJGjk" target="_blank">TensorFlow Full Course</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Applications</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=VXOkVVxAvWY" target="_blank">Image Recognition</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=fNxaJsNG3-s" target="_blank">Natural Language Processing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow-down">⬇️</div>
+            
+            <!-- STAGE 9: PORTFOLIO & PRACTICE -->
+            <div class="stage">
+                <div class="stage-header">
+                    <h2><span class="stage-number">9</span> Build Portfolio & Practice</h2>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">💪</span>Practice Platforms</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Kaggle</h4>
+                            <ul>
+                                <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn (Free Courses)</a></li>
+                                <li><a href="https://www.kaggle.com/competitions" target="_blank">Kaggle Competitions</a></li>
+                                <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Other Platforms</h4>
+                            <ul>
+                                <li><a href="https://www.stratascratch.com/" target="_blank">StrataScratch</a></li>
+                                <li><a href="https://www.datacamp.com/projects" target="_blank">DataCamp Projects (Some Free)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📊</span>Dataset Sources</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Free Datasets</h4>
+                            <ul>
+                                <li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a></li>
+                                <li><a href="https://archive.ics.uci.edu/ml/index.php" target="_blank">UCI Machine Learning Repository</a></li>
+                                <li><a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a></li>
+                                <li><a href="https://data.gov/" target="_blank">Data.gov</a></li>
+                                <li><a href="https://data.fivethirtyeight.com/" target="_blank">FiveThirtyEight Data</a></li>
+                                <li><a href="https://github.com/awesomedata/awesome-public-datasets" target="_blank">Awesome Public Datasets</a></li>
+                                <li><a href="https://www.reddit.com/r/datasets/" target="_blank">r/datasets (Reddit)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">🎨</span>Portfolio Projects</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Project Ideas</h4>
+                            <ul>
+                                <li><a href="https://www.dataquest.io/blog/data-analyst-portfolio/" target="_blank">Portfolio Project Ideas</a></li>
+                                <li><a href="https://github.com/topics/data-analysis" target="_blank">Data Analysis Projects (GitHub)</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=qfyynHBFOsM" target="_blank">Alex The Analyst: Portfolio Projects</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>GitHub for Portfolio</h4>
+                            <ul>
+                                <li><a href="https://guides.github.com/activities/hello-world/" target="_blank">GitHub Basics</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">Git & GitHub Full Course</a></li>
+                                <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Git Tutorial</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow-down">⬇️</div>
+            
+            <!-- STAGE 10: CAREER RESOURCES -->
+            <div class="stage">
+                <div class="stage-header">
+                    <h2><span class="stage-number">10</span> Career Resources & Networking</h2>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">📺</span>YouTube Channels</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Top Data Analyst Channels</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/@AlexTheAnalyst" target="_blank">Alex The Analyst</a></li>
+                                <li><a href="https://www.youtube.com/@KenJee_ds" target="_blank">Ken Jee</a></li>
+                                <li><a href="https://www.youtube.com/@LukeBarousse" target="_blank">Luke Barousse</a></li>
+                                <li><a href="https://www.youtube.com/@DataProfessor" target="_blank">Data Professor</a></li>
+                                <li><a href="https://www.youtube.com/@TinaHuang1" target="_blank">Tina Huang</a></li>
+                                <li><a href="https://www.youtube.com/@statquest" target="_blank">StatQuest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">💼</span>Interview Preparation</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Interview Resources</h4>
+                            <ul>
+                                <li><a href="https://www.interviewquery.com/" target="_blank">InterviewQuery - Data Analyst Questions</a></li>
+                                <li><a href="https://www.datalemur.com/" target="_blank">DataLemur - SQL Interview Questions</a></li>
+                                <li><a href="https://www.glassdoor.com/" target="_blank">Glassdoor Interview Reviews</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=7Z9UpD3ss6o" target="_blank">Data Analyst Interview Questions</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Resume & LinkedIn</h4>
+                            <ul>
+                                <li><a href="https://www.dataquest.io/blog/how-data-science-resume-cv/" target="_blank">Data Analyst Resume Guide</a></li>
+                                <li><a href="https://www.linkedin.com/business/talent/blog/product-tips/linkedin-profile-summaries-that-we-love-and-how-to-boost-your-own" target="_blank">LinkedIn Profile Tips</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=xrhPjE7wHas" target="_blank">Resume Tips for Data Analysts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="substage">
+                    <h3><span class="substage-icon">👥</span>Communities & Forums</h3>
+                    <div class="resources">
+                        <div class="resource-card">
+                            <h4>Online Communities</h4>
+                            <ul>
+                                <li><a href="https://www.reddit.com/r/dataanalysis/" target="_blank">r/dataanalysis</a></li>
+                                <li><a href="https://www.reddit.com/r/learnpython/" target="_blank">r/learnpython</a></li>
+                                <li><a href="https://www.reddit.com/r/SQL/" target="_blank">r/SQL</a></li>
+                                <li><a href="https://www.kaggle.com/discussion" target="_blank">Kaggle Forums</a></li>
+                                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                                <li><a href="https://discord.gg/data" target="_blank">Data Science Discord Servers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- FREE CERTIFICATIONS SECTION -->
+        <div class="certifications">
+            <h2>🎓 Free Certifications for Data Analysts</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>Google Data Analytics Certificate</h3>
+                    <p>Professional certificate covering data analysis fundamentals, SQL, R, Tableau, and more. 7-day free trial available.</p>
+                    <a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">Start Learning →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>IBM Data Analyst Certificate</h3>
+                    <p>Comprehensive program covering Excel, SQL, Python, data visualization, and analytics. 7-day free trial.</p>
+                    <a href="https://www.coursera.org/professional-certificates/ibm-data-analyst" target="_blank">Start Learning →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>Microsoft Power BI Data Analyst</h3>
+                    <p>Free learning paths for Power BI certification. Covers data modeling, visualization, and DAX.</p>
+                    <a href="https://learn.microsoft.com/en-us/certifications/power-bi-data-analyst-associate/" target="_blank">Start Learning →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>Kaggle Micro-Courses</h3>
+                    <p>100% free certificates in Python, Pandas, Data Visualization, SQL, and Machine Learning.</p>
+                    <a href="https://www.kaggle.com/learn" target="_blank">Start Learning →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>DataCamp Free Courses</h3>
+                    <p>Selected free courses with certificates in Python, R, SQL, and data analysis fundamentals.</p>
+                    <a href="https://www.datacamp.com/courses-all" target="_blank">Browse Courses →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>LinkedIn Learning (Free Trial)</h3>
+                    <p>1-month free trial with certificates in Excel, SQL, Python, Tableau, and data analysis.</p>
+                    <a href="https://www.linkedin.com/learning/" target="_blank">Start Trial →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>HackerRank Skills Certification</h3>
+                    <p>Free certificates for SQL, Python, and problem-solving skills. Great for your resume!</p>
+                    <a href="https://www.hackerrank.com/skills-verification" target="_blank">Get Certified →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>Tableau Desktop Specialist</h3>
+                    <p>Free learning resources for Tableau certification. Exam fee applies but prep is free.</p>
+                    <a href="https://www.tableau.com/learn/certification/desktop-specialist" target="_blank">Prepare Now →</a>
+                </div>
+                <div class="cert-card">
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p>Free training for AWS fundamentals. Useful for cloud-based data analysis roles.</p>
+                    <a href="https://aws.amazon.com/training/digital/" target="_blank">Start Training →</a>
                 </div>
             </div>
         </div>
         
+        <!-- LEARNING PATH -->
         <div class="learning-path">
-            <h2>🎯 Recommended Learning Path</h2>
+            <h2>🎯 Recommended 12-Month Learning Path</h2>
             <div class="path-stages">
                 <div class="path-card">
-                    <h3>📅 Months 1-3: Beginner</h3>
+                    <h3>📅 Months 1-3: Foundation</h3>
                     <ul>
-                        <li>Excel basics & functions</li>
-                        <li>SQL fundamentals</li>
-                        <li>Python basics</li>
-                        <li>Basic statistics</li>
+                        <li>Master Excel (functions, pivot tables, charts)</li>
+                        <li>Learn SQL fundamentals & practice daily</li>
+                        <li>Start Python basics</li>
+                        <li>Study basic statistics</li>
+                        <li>Complete 2-3 small Excel projects</li>
                     </ul>
                 </div>
                 <div class="path-card">
                     <h3>📅 Months 4-6: Intermediate</h3>
                     <ul>
                         <li>Master Pandas & NumPy</li>
-                        <li>Data visualization (Matplotlib, Seaborn)</li>
-                        <li>Tableau or Power BI</li>
-                        <li>Work on small projects</li>
+                        <li>Learn Matplotlib & Seaborn</li>
+                        <li>Start Tableau or Power BI</li>
+                        <li>Advanced SQL (joins, subqueries, CTEs)</li>
+                        <li>Build 3-4 Python data analysis projects</li>
+                        <li>Get Kaggle certification</li>
                     </ul>
                 </div>
                 <div class="path-card">
-                    <h3>📅 Months 7-12: Advanced</h3>
+                    <h3>📅 Months 7-9: Advanced</h3>
                     <ul>
-                        <li>Machine learning basics</li>
-                        <li>Advanced SQL</li>
-                        <li>Build portfolio projects</li>
-                        <li>Kaggle competitions</li>
-                        <li>Network & apply for jobs</li>
+                        <li>Learn statistical analysis deeply</li>
+                        <li>Introduction to Machine Learning</li>
+                        <li>Master data visualization tools</li>
+                        <li>Work on real-world datasets</li>
+                        <li>Participate in Kaggle competitions</li>
+                        <li>Start building portfolio website</li>
+                    </ul>
+                </div>
+                <div class="path-card">
+                    <h3>📅 Months 10-12: Job Ready</h3>
+                    <ul>
+                        <li>Complete 5-7 portfolio projects</li>
+                        <li>Get Google/IBM certification</li>
+                        <li>Practice interview questions</li>
+                        <li>Optimize LinkedIn & resume</li>
+                        <li>Network in communities</li>
+                        <li>Apply for jobs & internships</li>
                     </ul>
                 </div>
             </div>
         </div>
         
+        <!-- TIPS SECTION -->
         <div class="tips">
-            <h3>💡 Tips for Success</h3>
+            <h3>💡 Pro Tips for Success in 2026</h3>
             <ul>
-                <li><strong>Practice Daily:</strong> Consistency is key. Even 30 minutes daily is better than 5 hours once a week.</li>
-                <li><strong>Build Projects:</strong> Apply what you learn to real-world datasets.</li>
-                <li><strong>Join Communities:</strong> Engage with other learners on Reddit, Kaggle, and Discord.</li>
-                <li><strong>Document Your Journey:</strong> Keep a blog or GitHub repository of your learning.</li>
-                <li><strong>Don't Skip Statistics:</strong> It's the foundation of data analysis.</li>
-                <li><strong>Learn by Teaching:</strong> Explain concepts to others to solidify your understanding.</li>
+                <li><strong>Practice Daily:</strong> Consistency beats intensity. Even 30-60 minutes daily is better than 8 hours once a week.</li>
+                <li><strong>Build Projects, Not Just Tutorials:</strong> Apply what you learn to real-world datasets immediately.</li>
+                <li><strong>Join Communities:</strong> Engage actively on Reddit, Kaggle, Discord, and LinkedIn. Network is your net worth!</li>
+                <li><strong>Document Everything:</strong> Keep a learning journal, blog, or GitHub repository. It helps retention and builds your brand.</li>
+                <li><strong>Don't Skip Statistics:</strong> It's the foundation of data analysis. You can't escape it, so embrace it early.</li>
+                <li><strong>Learn by Teaching:</strong> Explain concepts to others (or rubber duck). It solidifies your understanding.</li>
+                <li><strong>Focus on Business Impact:</strong> Always think "So what?" - how does your analysis drive business decisions?</li>
+                <li><strong>Master SQL First:</strong> It's the #1 skill employers look for. Get really good at it.</li>
+                <li><strong>Build a Portfolio Website:</strong> Use GitHub Pages (free) to showcase your projects professionally.</li>
+                <li><strong>Stay Updated:</strong> Follow data analyst YouTubers, read blogs, and keep learning new tools.</li>
             </ul>
         </div>
         
+        <!-- FOOTER -->
         <footer>
-            <h3>📚 Additional Free Books</h3>
-            <p style="margin: 20px 0;">
-                <a href="https://greenteapress.com/thinkstats/" target="_blank" style="color: #3498db; margin: 0 10px;">Think Stats</a> |
-                <a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank" style="color: #3498db; margin: 0 10px;">Python Data Science Handbook</a> |
-                <a href="https://www.statlearning.com/" target="_blank" style="color: #3498db; margin: 0 10px;">Intro to Statistical Learning</a> |
-                <a href="https://hastie.su.domains/ElemStatLearn/" target="_blank" style="color: #3498db; margin: 0 10px;">Elements of Statistical Learning</a>
+            <div class="books-section">
+                <h3>📚 Essential Free Books</h3>
+                <p style="margin: 25px 0; line-height: 2;">
+                    <a href="https://greenteapress.com/thinkstats/" target="_blank">Think Stats (Free PDF)</a> |
+                    <a href="https://jakevdp.github.io/PythonDataScienceHandbook/" target="_blank">Python Data Science Handbook</a> |
+                    <a href="https://www.statlearning.com/" target="_blank">Introduction to Statistical Learning</a> |
+                    <a href="https://hastie.su.domains/ElemStatLearn/" target="_blank">Elements of Statistical Learning</a> |
+                    <a href="https://r4ds.had.co.nz/" target="_blank">R for Data Science</a> |
+                    <a href="https://automatetheboringstuff.com/" target="_blank">Automate the Boring Stuff with Python</a>
+                </p>
+            </div>
+            
+            <p style="margin-top: 40px; font-size: 1.1em; opacity: 0.9;">
+                <strong>Last Updated:</strong> December 2025 | <strong>For:</strong> 2026 Learning Journey
             </p>
-            <p style="margin-top: 30px; opacity: 0.8;">Last Updated: December 2025</p>
-            <p style="opacity: 0.8;">All resources are 100% FREE or have free tiers</p>
-            <p style="margin-top: 20px; font-size: 1.2em;">Good luck on your Data Analysis journey! 🚀📊</p>
+            <p style="opacity: 0.85; margin-top: 15px;">
+                All resources are 100% FREE or have free tiers/trials. No paid content required to complete this roadmap.
+            </p>
+            <p style="margin-top: 30px; font-size: 1.5em; font-weight: bold;">
+                Good luck on your Data Analysis journey! 🚀📊💪
+            </p>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                Created with ❤️ for aspiring Data Analysts worldwide
+            </p>
         </footer>
     </div>
 </body>
